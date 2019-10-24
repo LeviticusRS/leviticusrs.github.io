@@ -22,7 +22,7 @@ $(document).ready(function () {
         //maxBounds: L.latLngBounds(L.latLng(-40, -180), L.latLng(85, 153))
         zoomControl: false,
         renderer: L.canvas()
-    }).setView([-79, -137], 7);
+    }).setView([-77, -171], 7);
 
     map.plane = 0;
 
