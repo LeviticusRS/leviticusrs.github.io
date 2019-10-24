@@ -8,6 +8,7 @@ import {CoordinatesControl} from './controls/coordinates_control.js';
 import {LocalCoordinatesControl} from './controls/local_coordinates_control.js';
 import {RegionBaseCoordinatesControl} from './controls/region_base_coordinates_control.js';
 import {GridControl} from './controls/grid_control.js';
+import {NpcLookupControl} from './controls/npc_lookup_control.js';
 import {LocationLookupControl} from './controls/location_lookup_control.js';
 import {MapLabelControl} from './controls/map_label_control.js';
 import {PlaneControl} from './controls/plane_control.js';
@@ -55,6 +56,7 @@ $(document).ready(function () {
     map.addControl(new RegionLookupControl());
     map.addControl(new GridControl());
     map.addControl(new RegionLabelsControl());
+	map.addControl(new NpcLookupControl());
     
     var prevMouseRect, prevMousePos;
     map.on('mousemove', function(e) {
