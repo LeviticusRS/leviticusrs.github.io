@@ -27,7 +27,6 @@ html, body {
     display: inline-block;
     font-size: 1em;
     font-weight: 700;
-    color: yellow;
     text-align: center;
     transform: translateX(-50%);
 }

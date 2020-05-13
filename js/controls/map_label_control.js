@@ -44,8 +44,8 @@ var MapLabelsCanvas = CanvasLayer.extend({
                 // Scale font size to match zoom
                 const fontSizeScaled =  fontSize * Math.pow(2, zoom);
 
-                ctx.font = `bold ${fontSizeScaled}px Arial` 
-                ctx.fillStyle = fontColour
+                ctx.font = `bold ${fontSizeScaled}px Arial`
+                ctx.fillStyle = "red";
                 
                 var position = locations[i].position;
                 var latLng = position.toCentreLatLng(self._map);
@@ -77,6 +77,7 @@ var MapLabelsCanvas = CanvasLayer.extend({
                 lines.forEach(line => {
                     ctx.strokeText(line, canvasPoint.x, y);
                     ctx.fillText(line, canvasPoint.x, y);
+                    ctx.fillStyle = "red";
                     y += (fontSize + 0.02) * Math.pow(2, zoom);
                 })
             }
