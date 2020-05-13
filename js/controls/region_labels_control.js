@@ -59,6 +59,7 @@ export var RegionLabelsControl = L.Control.extend({
         var regionLabelsCanvas = new RegionLabelsCanvas({pane: "region-labels"});
         map.getPane("region-labels").style.display = "none";
         map.getPane("region-labels").style.color = "yellow";
+        map.getPane("region-labels").style.background = "white";
         map.addLayer(regionLabelsCanvas);
         
         this.visible = false;
