@@ -67,8 +67,12 @@ export var RegionLabelsControl = L.Control.extend({
         L.DomEvent.on(labelsButton, 'click', () => {
             if (this.visible) {
                 map.getPane("region-labels").style.display = "none";
+                map.getPane("region-labels").style.color = "yellow";
+                map.getPane("region-labels").style.background = "white";
             } else {
                 map.getPane("region-labels").style.display = "";
+                map.getPane("region-labels").style.color = "yellow";
+                map.getPane("region-labels").style.background = "white";
             }
             this.visible = !this.visible;
         }, this);
